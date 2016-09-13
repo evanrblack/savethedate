@@ -1,0 +1,27 @@
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  font-size: 2em;
+}
+
+.cerulean {
+  color: #02a4d3;
+}
+
+.cerulean-bg {
+  background-color: #02a4d3;
+}
+
+.timberwolf {
+  color: #d9d6cf;
+}
+
+.timberwolf-bg {
+  background-color: #d9d6cf;
+}
+
+a {
+  color: #02a4d3;
+  text-decoration: none;
+}
