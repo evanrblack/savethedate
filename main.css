@@ -1,8 +1,11 @@
 body {
-  background-color: black;
+  background-color: white;
   padding: 0;
   margin: 0;
   font-size: 2em;
+  font-family: 'Great Vibes', cursive;
+  /*font-family: 'Sacramento', cursive;
+  font-family: 'Pinyon Script', cursive;*/
 }
 
 .cerulean {
@@ -24,4 +27,23 @@ body {
 a {
   color: #02a4d3;
   text-decoration: none;
+}
+
+#header {
+  height: 100px;
+  padding-top: 300px;
+  background-color: #02a4d3;
+  text-align: center;
+}
+
+#header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 64px;
+}
+
+@media (max-width: 400px) {
+  #header h1 {
+    font-size: 48px;
+  }
 }
