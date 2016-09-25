@@ -1,101 +1,137 @@
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
 @import "https://fonts.googleapis.com/css?family=Great+Vibes|Pinyon+Script|Sacramento|Courgette";
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
-/* Cobalt */
-/* Timberwolf (10% LIGHTER) */
+
+$primary: #0047ab;  /* Cobalt */
+$secondary: lighten(#d9d6cf, 10%);  /* Timberwolf (10% LIGHTER) */
+
 body {
   background-color: white;
   padding: 0;
   margin: 0;
   /*font-family: 'Sacramento', cursive;
-  font-family: 'Pinyon Script', cursive;*/ }
+  font-family: 'Pinyon Script', cursive;*/
+}
 
 .primary {
-  color: #0047ab; }
+  color: $primary;
+}
 
 .primary-bg {
-  color: #0047ab; }
+  color: $primary;
+}
 
 .secondary {
-  color: #f0eeeb; }
+  color: $secondary;
+}
 
 .secondary-bg {
-  background-color: #f0eeeb; }
+  background-color: $secondary;
+}
 
 a {
-  color: #0047ab;
-  text-decoration: none; }
+  color: $primary;
+  text-decoration: none;
+}
 
 hr {
   width: 60%;
-  border: 1px solid #f0eeeb; }
+  border: 1px solid $secondary;
+}
 
 #navbar {
   font-family: 'Courgette', cursive;
   font-size: 32px;
   font-weight: light;
-  background-color: #003c92;
+  background-color: darken($primary, 5%);
   padding: 10px;
   text-align: center;
   box-shadow: 0 10px 4px rgba(0, 0, 0, 0.4);
   position: relative;
   letter-spacing: 4px;
-  z-index: 1; }
-  #navbar a {
-    color: #f0eeeb;
-    margin-right: 30px; }
+  z-index: 1;
+
+  a {
+    color: $secondary;
+    margin-right: 30px;
+  }
+}
 
 #header {
   height: 100px;
   padding-top: 300px;
-  background-color: #0047ab;
+  background-color: $primary;
   text-align: center;
   font-family: 'Great Vibes', cursive;
-  margin-bottom: 48px; }
-  #header h1 {
+  margin-bottom: 48px;
+
+  h1 {
     margin: 0;
     padding: 0;
-    font-size: 64px; }
+    font-size: 64px;
+  }
+}
 
 section.info {
-  text-align: center; }
-  section.info .fa {
+  text-align: center;
+  
+  .fa {
     display: inline-block;
     font-size: 96px;
-    background-color: #0047ab;
-    color: #f0eeeb;
+    background-color: $primary;
+    color: $secondary;
     width: 96px;
     height: 96px;
     border-radius: 48px;
-    margin-right: 24px; }
-  section.info h2 {
+    margin-right: 24px;
+  }
+  
+  h2 {
     display: inline-block;
     font-size: 48px;
-    font-family: 'Courgette', cursive; }
-  section.info h3 {
+    font-family: 'Courgette', cursive;
+  }
+
+  h3 {
     font-size: 32px;
-    font-family: 'Courgette', cursive; }
-  section.info p {
-    font-size: 24px; }
+    font-family: 'Courgette', cursive;
+  }
+  
+  p {
+    font-size: 24px;
+  }
+}
 
 #registries {
-  text-align: center; }
-  #registries h2 {
+  text-align: center;
+
+  h2 {
     font-size: 48px;
     font-family: 'Courgette', cursive;
-    margin-bottom: 0; }
-  #registries a img {
-    margin: 10px auto 20px auto;
-    width: 400px;
-    filter: grayscale(80%); }
-  #registries a:hover img {
-    filter: none; }
+    margin-bottom: 0;
+  }
+  
+  a {
+    img {
+      margin: 10px auto 20px auto;
+      width: 400px;
+      filter: grayscale(80%);
+    }
+    
+    &:hover img {
+      filter: none;
+    }
+  }
+}
 
 @media (max-width: 800px) {
   #navbar {
-    display: none; } }
+    display: none;
+  }
+}
+
 @media (max-width: 400px) {
   #header h1 {
-    font-size: 48px; } }
-
-/*# sourceMappingURL=main.css.map */
+    font-size: 48px;
+  }
+}
